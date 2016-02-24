@@ -2,13 +2,33 @@
     outline: 1px solid red;
 }*/
 
+body {
+    font-family: Helvetica;
+}
+
 .chart {
   height: 500px;
+    font-family: Helvetica;
 }
 
 .bar {
-    height: 15px;
-    background-color: darkblue;
+    display: inline-block;
+    background-color: paleturquoise;
     margin-top: 1px;
     outline: 1px solid black; 
+    padding: 4px; 
+    height: 20px;
+}
+
+span {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bar-item 
+{
+    display: block;
+    position: relative;
+    
 }

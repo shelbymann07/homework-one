@@ -23,10 +23,19 @@ function loopThroughData(s) {
         
         var barWidth = gradPct * 5;
         
+        //working with text: 
+        //paragraph tags. 
+        //h tags (h1, h2, etc.)
+        //span
+        //div
+        
         if (schoolName === "COLUMBIA-HICKMAN HIGH") {
             $(".chart").append(
-                "<p>"+year+": "+gradPct+"%</p>"+
-                "<div class='bar' style='width:"+barWidth+"px'></div>");
+                "<div class='bar-item'>"+
+                    "<span>"+year+": "+gradPct+"%</span>"+
+                    "<div class='bar' style='width:"+barWidth+"px'></div>"+
+                "</div>"
+            );
         }
     }
 }
